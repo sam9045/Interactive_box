@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bundle & Save</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    <div class="container">
+        <h3>Bundle & Save</h3>
+        <div class="bundle-option selected" onclick="selectBundle(1, 195, this)">
+            <input type="radio" name="bundle" checked> 1 Pair - <span class="price">DKK 195.00</span> (50% OFF)
+            <div class="bundle-details">
+                <br> Size: <select><option>S</option><option>M</option><option>L</option></select>
+                <br> Color: <select><option>Red</option><option>Yellow</option><option>Green</option><option>Navy Blue</option></select>
+            </div>
+        </div>
+        <div class="bundle-option" onclick="selectBundle(2, 345, this)">
+            <input type="radio" name="bundle"> <span class="most-popular">Most Popular</span> 2 Pairs - <span class="price">DKK 345.00</span> (40% OFF)
+            <div class="bundle-details hidden">
+                <br> Size: <select><option>S</option><option>M</option><option>L</option></select>
+                <br> Color: <select><option>Red</option><option>Yellow</option><option>Green</option><option>Navy Blue</option></select>
+            </div>
+        </div>
+        <div class="bundle-option" onclick="selectBundle(3, 528, this)">
+            <input type="radio" name="bundle"> 3 Pairs - <span class="price">DKK 528.00</span> (60% OFF)
+            <div class="bundle-details hidden">
+                <br> Size: <select><option>S</option><option>M</option><option>L</option></select>
+                <br> Color: <select><option>Red</option><option>Yellow</option><option>Green</option><option>Navy Blue</option></select>
+            </div>
+        </div>
+        <div class="bottom-section">
+            <p class="free-shipping">Free 2 Day Shipping</p>
+            <p class="total-price">Total: <span id="total-price">DKK 195.00</span></p>
+        </div>
+        <button class="add-to-cart" onclick="addToCart()">+ Add to Cart</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
